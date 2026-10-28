@@ -21,19 +21,71 @@ Select ONE Additional Feature to Add
   <meta charset="utf-8">
   <style>
     h1{
-      color: pink;
+      color: rgb(32, 3, 21);
     }
- 
+ th{
+  color:rgb(0, 11, 163)
+ }
 h2{
-  color:blue
+  color:rgb(238, 12, 12)
+}
+td{
+  color:rgb(241, 6, 6)
 }
 p{
-  color:blueviolet
+  color:rgb(5, 14, 43)
+}
+li{
+  color:#000000
 }
    body{
-      background-image url(https://thumbs.dreamstime.com/b/lucky-man-holding-dollar-bill-money-his-hand-handsome-bearded-red-shirt-funny-guy-winner-pile-surprised-can-109757583.jpg)
+      background-image: url(https://www.shutterstock.com/image-photo/photo-funky-eccentric-granddad-hold-260nw-2233080449.jpg)
     }
-    
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(0, 255, 0);
+  color: white;
+  transform: rotateY(180deg);
+}
   </style>
 </head>
 
@@ -54,8 +106,9 @@ p{
     <li>Time: prep one hour, cook time: 30 minutes</li>
     <li>Serves: The 1 percent</li>
   </ul>
-
-  <table>
+<img src="https://media.istockphoto.com/id/1368800292/photo/cool-and-stylish-senior-old-woman-with-fashionable-clothes.jpg?s=612x612&w=0&k=20&c=UzO6i1UkKXWt-lbnrVrxG_eAEJHyUvlRB70JykpECDQ="
+ 
+<table>
     <thead>
       <tr>
         <th>Ingredients</th>
@@ -67,9 +120,11 @@ p{
         <td>Caramelized Onions</td>
         <td>------Any amount is okay, you are the one percent, do what you want you absolute god</td>
       </tr>
+    
       <tr>
 <td>Bacon bits------------</td>
 <td>Add diced bacon bits to yo pot</td>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLrUr1EyY8vs0wEKsK-YN3vHLGPYpFqGnK8pTPMro1HQ&s=10"
       </tr>
       <tr>
         <td>Shredded chicken</td>
@@ -84,6 +139,8 @@ p{
         <td>Any size, any amount, I accept all sizes of these things, CRUCIAL, no I did NOT say "garlic soy sauce," that was a lesson, commas are necessary</td>
       </tr>
     </tbody>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmkxu4_gZrpu5zTwXs9rkrLnYBq8MVxxzycISpUN_BVx3DGhv7cw-gTtg&s=10"
+     
   </table>
 
   <p><strong>Step 1:</strong> Caramalize those 'ions.
@@ -91,7 +148,7 @@ p{
   </p>
   <p><strong>Step 2</strong> Make the bread crumbole
   </p>
-  <p><strong>Step 3</strong>Cook the aromatics...
+  <p><strong>Step 3</strong>Cook the aromatics
   </p>
   <p><strong>Step..what was it? Oh! 4. Come on, keep up, you are the one percent. YOu are  god.</strong>
   add more ingredients, and simmer down with the soup boy! You are a god.</p>
@@ -101,7 +158,20 @@ p{
   <p><strong>Step seis, jokes, for the others in the room it means 6.</strong> Add the cheese, cream and cornstarch</p>
 <p><strong>And now you are officially done, sit on your throne, get you your biggest bowl yet, or go to the store your local duane reade or whatver you may have, get you a big bowl, get you a spoon, eat it like the king, queen, or anything in the one percent between.</strong></p>
   <p><em>Source: <a href="https://www.tasteofhome.com/collection/the-best-soup-recipes/">Some recipes websites</a></em></p>
-
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VDNyv4xFLLsUiDKzuL8k75SLyFoqXlapSjssuUJTTQ&s=10"  style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>This spoomn</h1>
+      <p>Art and engineeringer</p>
+      <p>arcteryx jackrt</p>
+    </div>
+  </div>
+</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtEH-1Rpz_D6zEyHCr_qbR_V_e6qt_h5HUSrRIthqmJUaTu6KrzqAmiM&s=10"
 </body>
+
 
 </html>
